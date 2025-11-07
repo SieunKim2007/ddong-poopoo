@@ -19,7 +19,9 @@ document.getElementById("dropBtn").addEventListener("click", dropFruit);
 function dropFruit() {
   // 1. 랜덤 과일 선택
   const isRare = Math.random() < 0.05; // 10% 확률로 희귀
-  const fruitList = isRare ? fruits.filter(f => f.rare) : fruits.filter(f => !f.rare);
+  const fruitList = isRare 
+    ? fruits.filter(f => f.rare === true)
+    : fruits.filter(f => !f.rare);
   const fruit = fruitList[Math.floor(Math.random() * fruitList.length)];
 
   // 2. 새 과일 요소 생성
