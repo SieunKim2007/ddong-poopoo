@@ -1,3 +1,5 @@
+window.onerror = (msg, src, line, col, err) => alert("🚨 오류: " + msg + "\n(" + line + ")");
+
 // 🍎 과일 종류 정의 (일반 + 희귀)
 const fruits = [
   { emoji: "💩", weight: 120 },
