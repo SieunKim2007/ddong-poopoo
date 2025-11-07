@@ -1,0 +1,79 @@
+/* 📱 기본 세팅 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom, #b3e5fc 0%, #ffffff 100%);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 헤더 */
+header {
+  padding: 1rem;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid #eee;
+}
+
+/* 메인 게임 영역 */
+#game {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 버튼 */
+#dropBtn {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #ffcc80;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+}
+#dropBtn:hover {
+  background-color: #ffb300;
+}
+
+/* 무게표시 */
+#weight {
+  font-size: 1.1rem;
+  margin: 0.6rem 0 1rem 0;
+  color: #333;
+}
+
+/* 하늘 영역 */
+#sky {
+  position: relative;
+  height: 50%;
+}
+
+/* 바닥 영역 */
+#ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #c8e6c9;
+  border-top: 3px solid #81c784;
+  overflow: visible;
+}
+
+/* 과일 아이콘 공통 스타일 */
+.fruit {
+  position: absolute;
+  font-size: 2rem;
+  transition: transform 1s linear;
+}
