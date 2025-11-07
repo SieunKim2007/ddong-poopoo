@@ -76,4 +76,5 @@ header {
   position: absolute;
   font-size: 2rem;
   transition: transform 1s linear;
+  z-index: 2;
 }
